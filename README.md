@@ -1,5 +1,5 @@
 # TallerTDD
 
-Ricardo Guerrero
+- Ricardo Guerrero
 
-Juan José Builes
+- Juan José Builes
