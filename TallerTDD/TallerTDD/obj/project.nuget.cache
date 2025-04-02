@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R5osdqPtT3TYi7IfP6rpB0T5KO1YzwwfB59yMXRUdiZ72/QUngVQHiJa5CjDEvI0x4eL7y1nw+jVcEItTMmW+A==",
+  "dgSpecHash": "oaRRqrSjXTLchVQel6owWxkDMkB6ysuEEuqnHfRUZpXKdOyMp2ge7PyzLuKEQeMKFhFx4ky322oIBEnDc3o6xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\TallerTDD\\TallerTDD\\TallerTDD.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\TallerTDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",
