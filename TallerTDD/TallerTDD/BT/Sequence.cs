@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TallerBT.BT
+public class Sequence : Node
 {
-    public class Sequence : Node
+    public override bool Execute()
     {
-        public override bool Execute()
+        foreach (var child in children)
         {
-            foreach (Node child in children)
+            if (!child.ExecuteWithLogging())
             {
-                if (!child.Execute()) return false;
+                Console.WriteLine($"Fallo en nodo: {child.GetType().Name}");
+                return false;
             }
-            return true;
         }
+        return true;
     }
 }
+

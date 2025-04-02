@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading; // Necesario para Thread.Sleep
 
 namespace TallerBT.BT
 {
@@ -22,14 +19,21 @@ namespace TallerBT.BT
 
         public override bool Execute()
         {
-            if (agent.DistanciaAlObjetivo(objetivo) > distanciaValida)
+            while (agent.DistanciaAlObjetivo(objetivo) > distanciaValida)
             {
                 agent.MoverHaciaObjetivo(objetivo);
-                return false; // Todavía no ha llegado
+                Thread.Sleep(100); // Espera para visualizar el movimiento
             }
-
-            Console.WriteLine("El agente ha alcanzado la distancia válida.");
+            Console.WriteLine($"[Éxito] ¡Objetivo alcanzado! (Posición: {agent.Posicion})");
             return true;
+        }
+
+
+
+        public override void Reset()
+        {
+            // No reiniciar la posición aquí, solo preparar la tarea para una nueva ejecución
+            Console.WriteLine("[Reset] Reiniciando MoveToTarget");
         }
     }
 }

@@ -1,22 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Numerics;
 
 namespace TallerBT.BT
 {
-
     public class Agent
     {
-        public Vector2 Posicion { get; private set; }
+
+        private Vector2 posicionInicial;
+        public Vector2 Posicion { get; internal set; }
+
 
         public Agent(Vector2 posicionInicial)
         {
-            Posicion = posicionInicial;
+            this.posicionInicial = posicionInicial;
+            this.Posicion = posicionInicial; 
         }
-
         public float DistanciaAlObjetivo(Vector2 objetivo)
         {
             return Vector2.Distance(Posicion, objetivo);
@@ -24,9 +21,11 @@ namespace TallerBT.BT
 
         public void MoverHaciaObjetivo(Vector2 objetivo)
         {
-            Vector2 direccion = Vector2.Normalize(objetivo - Posicion);
-            Posicion += direccion; // Mueve al agente paso a paso
-            Console.WriteLine($"Agente se movió a la posición: {Posicion}");
+            // Imprime antes y después para ver si cambia la posición
+            Console.WriteLine($"[Antes] Posición del agente: {Posicion}");
+            Posicion = Vector2.Lerp(Posicion, objetivo, 0.1f); // Movimiento gradual
+            Console.WriteLine($"[Después] Posición del agente: {Posicion}");
         }
+
     }
 }

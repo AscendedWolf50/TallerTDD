@@ -22,19 +22,23 @@ namespace TallerBT.BT
 
         public override bool Execute()
         {
-            // Evaluar si el objetivo está dentro de la distancia válida
-            if (agent.DistanciaAlObjetivo(objetivo) <= distanciaValida)
+            // Si estamos FUERA de la distancia válida, ejecutamos los hijos
+            if (agent.DistanciaAlObjetivo(objetivo) > distanciaValida)
             {
-                Console.WriteLine("El objetivo está dentro de la distancia válida.");
+                Console.WriteLine("El objetivo está fuera de la distancia válida. Ejecutando hijos...");
 
-                // En lugar de terminar aquí, ejecutar los hijos
                 foreach (Node child in children)
                 {
-                    if (child.Execute()) return true;
+                    if (child.Execute())
+                    {
+                        return true;
+                    }
                 }
+                return false;
             }
 
-            return false;
+            Console.WriteLine("El objetivo está dentro de la distancia válida.");
+            return true;
         }
     }
 }

@@ -1,26 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TallerBT.BT
 {
     public class WaitTask : TaskNode
     {
-        private float segundos;
+        private float waitTime;
+        private bool completed = false;
 
-        public WaitTask(float segundos)
-        {
-            this.segundos = segundos;
-        }
+        public WaitTask(float time) => waitTime = time;
 
         public override bool Execute()
         {
-            int milisegundos = (int)(segundos * 1000);
-            Console.WriteLine($"Esperando {segundos} segundos...");
-            Thread.Sleep(milisegundos);
+            if (completed) return true;
+
+            //Console.WriteLine($"[Pausa] Esperando {waitTime}s...");
+            System.Threading.Thread.Sleep((int)(waitTime * 1000));
+            completed = true;
             return true;
         }
+
+        public override void Reset()
+        {
+            completed = false;
+        }
     }
+
 }

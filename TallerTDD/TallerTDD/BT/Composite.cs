@@ -8,7 +8,7 @@ namespace TallerBT.BT
 {
     public abstract class Composite : Node
     {
-        protected List<Node> children = new List<Node>(); // Lista de hijos
+        public List<Node> children = new List<Node>(); // Lista de hijos
 
         public void AddChild(Node node)
         {

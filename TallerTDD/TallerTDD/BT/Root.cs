@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TallerBT.BT
+﻿namespace TallerBT.BT
 {
     public class Root : Node
     {
-        private Node child; // El único hijo del nodo raíz
+        private Node child;
 
         public Root(Node rootChild)
         {
@@ -17,7 +11,19 @@ namespace TallerBT.BT
 
         public override bool Execute()
         {
-            return child.Execute(); 
+            if (child.Execute())
+            {
+                child.Reset(); // Reinicia todas las tareas cuando terminan
+                return true;
+            }
+            return false;
+        }
+
+        public override void Reset()
+        {
+            child.Reset(); // Asegura que también se pueda reiniciar manualmente
         }
     }
 }
+
+
