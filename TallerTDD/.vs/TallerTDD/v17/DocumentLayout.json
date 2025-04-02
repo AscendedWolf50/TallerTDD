@@ -1,10 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Desktop\\TallerTDD\\",
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\desktop\\tallertdd\\tallertdd\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\documents\\github\\tallertdd\\tallertdd\\tallertdd\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\documents\\github\\tallertdd\\tallertdd\\tallertdd\\tallertdd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\tallertdd.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\documents\\github\\tallertdd\\tallertdd\\tallertdd\\bt\\waittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\bt\\waittask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\documents\\github\\tallertdd\\tallertdd\\tallertdd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|c:\\users\\usuario\\documents\\github\\tallertdd\\tallertdd\\tallertdd\\bt\\composite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D97AE8-9041-4A04-9BC8-59D4098A5F3C}|TallerTDD\\TallerTDD.csproj|solutionrelative:tallertdd\\bt\\composite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,16 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Composite.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\BT\\Composite.cs",
+              "RelativeDocumentMoniker": "TallerTDD\\BT\\Composite.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\BT\\Composite.cs",
+              "RelativeToolTip": "TallerTDD\\BT\\Composite.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAASwAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:11:19.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\Program.cs",
+              "RelativeDocumentMoniker": "TallerTDD\\Program.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\Program.cs",
+              "RelativeToolTip": "TallerTDD\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T19:11:15.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TallerTDD",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\TallerTDD.csproj",
+              "RelativeDocumentMoniker": "TallerTDD\\TallerTDD.csproj",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\TallerTDD.csproj",
+              "RelativeToolTip": "TallerTDD\\TallerTDD.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-02T19:03:40.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WaitTask.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\BT\\WaitTask.cs",
+              "RelativeDocumentMoniker": "TallerTDD\\BT\\WaitTask.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\BT\\WaitTask.cs",
+              "RelativeToolTip": "TallerTDD\\BT\\WaitTask.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:34:57.735Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Desktop\\TallerTDD\\TallerTDD\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "TallerTDD\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Desktop\\TallerTDD\\TallerTDD\\UnitTest1.cs",
-              "RelativeToolTip": "TallerTDD\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TallerTDD\\Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\GitHub\\TallerTDD\\TallerTDD\\TallerTDD\\Tests\\UnitTest1.cs",
+              "RelativeToolTip": "TallerTDD\\Tests\\UnitTest1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T11:38:53.787Z",

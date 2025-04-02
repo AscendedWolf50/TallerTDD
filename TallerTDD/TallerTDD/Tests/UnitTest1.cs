@@ -1,4 +1,4 @@
-namespace TallerTDD
+namespace TallerTDD.Tests
 {
     public class Tests
     {
