@@ -28,7 +28,8 @@ partial class Program
         cycleSequence.AddChild(waitAtStart);
 
         // Raíz del árbol (ejecuta el ciclo infinito)
-        Root root = new Root(cycleSequence);
+        Root root = new Root(); //  Funciona si Root no requiere argumentos
+
 
         Console.WriteLine("=== Ciclo Iniciado ===");
         Console.WriteLine($"Posición inicial: {agent.Posicion}");

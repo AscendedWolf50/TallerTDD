@@ -8,11 +8,14 @@ namespace TallerBT.BT
 {
     public abstract class Composite : Node
     {
-        public List<Node> children = new List<Node>(); // Lista de hijos
+        protected List<Node> Children = new List<Node>();
 
-        public void AddChild(Node node)
+        public void AddChild(Node child)
         {
-            children.Add(node);
+            if (child is Root)
+                throw new InvalidOperationException("Composite no puede tener Root como hijo.");
+
+            Children.Add(child);
         }
     }
 }

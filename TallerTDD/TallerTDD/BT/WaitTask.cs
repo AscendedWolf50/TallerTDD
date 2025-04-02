@@ -13,8 +13,7 @@ namespace TallerBT.BT
         {
             if (completed) return true;
 
-            //Console.WriteLine($"[Pausa] Esperando {waitTime}s...");
-            System.Threading.Thread.Sleep((int)(waitTime * 1000));
+            Thread.Sleep((int)(waitTime * 1000));
             completed = true;
             return true;
         }
@@ -23,6 +22,6 @@ namespace TallerBT.BT
         {
             completed = false;
         }
-    }
 
+    }
 }

@@ -2,26 +2,22 @@
 {
     public class Root : Node
     {
-        private Node child;
+        public Node Child { get; private set; }
 
-        public Root(Node rootChild)
+        public void SetChild(Node child)
         {
-            child = rootChild;
+            if (child is Root)
+                throw new InvalidOperationException("El Root no puede tener otro Root como hijo.");
+
+            if (Child != null)
+                throw new InvalidOperationException("El Root solo puede tener un hijo.");
+
+            Child = child;
         }
 
         public override bool Execute()
         {
-            if (child.Execute())
-            {
-                child.Reset(); // Reinicia todas las tareas cuando terminan
-                return true;
-            }
-            return false;
-        }
-
-        public override void Reset()
-        {
-            child.Reset(); // Asegura que también se pueda reiniciar manualmente
+            return Child?.Execute() ?? false;
         }
     }
 }

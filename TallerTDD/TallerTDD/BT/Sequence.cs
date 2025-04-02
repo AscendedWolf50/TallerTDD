@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TallerBT.BT;
 
-public class Sequence : Node
+public class Sequence : Composite
 {
     public override bool Execute()
     {
-        foreach (var child in children)
+        foreach (var child in Children)
         {
-            if (!child.ExecuteWithLogging())
-            {
-                Console.WriteLine($"Fallo en nodo: {child.GetType().Name}");
+            if (!child.Execute())
                 return false;
-            }
         }
         return true;
     }
